@@ -3,6 +3,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+h3 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.bg-blue-light {
+  background-color: #f7f6f9;
+}
+
 .header {
     background-color: #bf6f12;
     width: 100%;
@@ -56,9 +66,8 @@ body {
 }
 
 .mySlides > img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .prev, .next {
@@ -111,4 +120,33 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.container-slidershow {
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.container > img {
+  width: 50%;
+  margin: 15px;
+  border-radius: 24px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-text > label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  margin: 5px 0 5px 0;
 }
